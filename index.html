@@ -1,13 +1,104 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh fhamet | Comprendre devient facile</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-background">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">💡</div>
+                <span class="text-2xl font-bold tracking-tight text-text-dark">Oh fhamet</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="courses.html" class="text-gray-600 hover:text-primary font-medium transition-colors">Cours</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">À propos</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">Tarifs</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="text-gray-600 hover:text-primary font-semibold px-4 py-2">Connexion</a>
+                <a href="register.html" class="btn-primary">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero -->
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-8">
+                <div class="inline-flex items-center gap-2 bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-bold w-fit">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                    <span>L'apprentissage réinventé</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-text-dark leading-tight">
+                    Comprendre devient facile avec <span class="text-primary">Oh fhamet</span>
+                </h1>
+                <p class="text-xl text-gray-500 leading-relaxed max-w-lg">
+                    La plateforme qui transforme les concepts complexes en déclics d'apprentissage pour les étudiants ambitieux.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="register.html" class="btn-primary">
+                        Commencer gratuitement <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="courses.html" class="bg-white text-text-dark px-6 py-3 rounded-xl font-semibold border border-gray-200 hover:bg-gray-50 transition-all">
+                        Explorer les cours
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="oh-fhamet-card p-4 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Student" class="rounded-xl w-full">
+                    <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white">
+                                <i data-lucide="lightbulb" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-text-dark">Oh fhamet ! 🎉</h4>
+                                <p class="text-sm text-gray-500">Nouveau badge débloqué.</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-accent w-[85%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-text-dark mb-16">Nos Filières d'Excellence</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="oh-fhamet-card group">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-3xl mb-6">📐</div>
+                    <h3 class="text-xl font-bold text-text-dark mb-3">Mathématiques</h3>
+                    <p class="text-gray-500 mb-6">Algèbre, Analyse, Géométrie et plus encore.</p>
+                    <a href="courses.html" class="text-primary font-bold flex items-center gap-2">Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+                <div class="oh-fhamet-card group">
+                    <div class="w-16 h-16 rounded-2xl bg-green-50 text-green-600 flex items-center justify-center text-3xl mb-6">🌱</div>
+                    <h3 class="text-xl font-bold text-text-dark mb-3">SVT</h3>
+                    <p class="text-gray-500 mb-6">Biologie, Géologie et sciences de la vie.</p>
+                    <a href="courses.html" class="text-primary font-bold flex items-center gap-2">Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+                <div class="oh-fhamet-card group">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-3xl mb-6">📖</div>
+                    <h3 class="text-xl font-bold text-text-dark mb-3">Français</h3>
+                    <p class="text-gray-500 mb-6">Grammaire, Littérature et communication.</p>
+                    <a href="courses.html" class="text-primary font-bold flex items-center gap-2">Explorer <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
