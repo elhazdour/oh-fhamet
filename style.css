@@ -19,7 +19,7 @@
 }
 
 .logo-img {
-  @apply h-14 w-auto transition-all duration-300 group-hover:scale-110 group-hover:rotate-2 filter drop-shadow-md;
+  @apply h-20 w-auto transition-all duration-500 group-hover:scale-110 group-hover:rotate-2 filter drop-shadow-xl brightness-105 contrast-105;
 }
 
 .oh-fhamet-card {
