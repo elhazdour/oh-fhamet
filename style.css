@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,12 +9,17 @@
   --color-text-dark: #2C2C2C;
   
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-logo: "Fredoka", sans-serif;
 }
 
 @layer base {
   body {
     @apply bg-background text-text-dark font-sans;
   }
+}
+
+.logo-img {
+  @apply h-14 w-auto transition-all duration-300 group-hover:scale-110 group-hover:rotate-2 filter drop-shadow-md;
 }
 
 .oh-fhamet-card {
